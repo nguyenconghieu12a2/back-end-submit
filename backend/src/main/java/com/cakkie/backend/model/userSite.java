@@ -38,10 +38,11 @@ public class userSite {
     @ManyToOne
     @JoinColumn(name = "status")
     private userStatus statusId;
-    @Column(name = "banned_reason", nullable = true, columnDefinition = "TEXT")
-    private String bannedReason;
     @Column(name = "account_create_date", nullable = false)
     private Date accountCreateDate;
+
+    @Column(name = "banned_reason", nullable = true, columnDefinition = "TEXT")
+    private String bannedReason;
 
     @OneToMany(mappedBy = "userId", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<userAddress> userAddresses;
