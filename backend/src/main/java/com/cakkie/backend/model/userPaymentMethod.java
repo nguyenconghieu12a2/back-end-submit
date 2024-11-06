@@ -11,7 +11,6 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "user_payment_method")
 public class userPaymentMethod {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
