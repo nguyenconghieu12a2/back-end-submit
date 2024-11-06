@@ -28,6 +28,4 @@ public class admin {
     private String password;
     @Column(name = "is_deleted", nullable = false)
     private int isDeleted;
-    @OneToOne(mappedBy = "admin")
-    private ForgotPassword forgotPassword;
 }
