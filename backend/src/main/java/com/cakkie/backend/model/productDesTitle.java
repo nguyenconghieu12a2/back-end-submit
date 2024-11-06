@@ -17,10 +17,10 @@ public class productDesTitle {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int desTitleID;
     @Column(name = "desTitleName", nullable = false)
-    private String desTitlename;
+    private String desTitleName;
     @Column(name = "is_deleted", nullable = false)
     private int isDeleted;
 
-    @OneToMany(mappedBy = "desTitleId")
+    @OneToMany(mappedBy = "desTitleID")
     private List<productDesInfo> productDesInfoList;
 }
