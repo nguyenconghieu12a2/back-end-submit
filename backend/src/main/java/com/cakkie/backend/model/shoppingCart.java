@@ -22,3 +22,4 @@ public class shoppingCart {
     @OneToMany(mappedBy = "cartId")
     private List<shoppingCartItem> shoppingCartItemsList;
 }
+
